@@ -5,7 +5,10 @@ WORKDIR /usr/src/app
 ## Install app dependencies
 ## A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
-RUN npm ci
+
+# RUN num install -g npm add 18.18.1
+ENV NODE_OPTIONS=--openssl-legacy-provider
+RUN npm ci --legacy-peer-deps
 ## Bundle app source
 COPY . .
 RUN ionic build
