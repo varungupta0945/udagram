@@ -1,0 +1,6 @@
+[profile varun]
+region = us-east-1
+output = json
+aws_access_key_id = ASIARQK2IHY3MMIZ7ENF
+aws_secret_access_key = uhzq2hAcuAgRqni5olWexdPLTFEPjnYrgTL35sKa
+
